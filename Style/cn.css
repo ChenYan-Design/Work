@@ -1,0 +1,59 @@
+h1,h2,h3,h4,h5,h6,p,li,div{
+    letter-spacing: 0.03em;
+    line-height: 1.6em;
+}
+
+/*-------------type-------------*/
+
+@font-face {
+font-family: 'wending';
+  src: url(font/WenDingJingZhongCuHeiGBK-1.ttf);
+}
+
+@font-face {
+font-family: 'wendinglight';
+  src: url(font/ARCrystalzhonghei-1.ttf);
+}
+
+@font-face {
+font-family: 'wendingbold';
+  src: url(font/ARCrystalzhonghei-Bold-1.ttf);
+}
+
+Body
+    Font-family: wending;
+}
+
+.light{
+    Font-family: wendinglight;
+}
+
+.bold{
+    Font-family:wendingbold;
+}
+
+.wide{
+    font-family: wending;
+}
+
+.widelight{
+    font-family: wendinglight;
+}
+
+.widebold{
+    font-family:wendingbold;
+}
+
+.wideextrabold{
+    font-family: wendingbold;
+}
+
+.quote{
+        font-family: wendinglight;
+}
+
+.en{
+    font-family: RF Dewi Expanded;
+}
+
+/*-------------type end-------------*/

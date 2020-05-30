@@ -1,0 +1,297 @@
+/*^^^^^^^^^^^^^^typeweight^^^^^^^^^^^^^^*/
+/* 007854 e2b9b3 */
+
+Body{
+    width: 100%;
+    Font-family: RF Dewi Extended;
+    margin:0;
+}
+
+.light{
+    Font-family: RF Dewi Extended;
+    font-weight: 300;
+}
+
+.bold{
+    Font-family: RF Dewi Extended;
+    font-weight: bold;
+}
+
+.wide{
+    font-family: RF Dewi Expanded;
+}
+
+.widelight{
+    font-family: RF Dewi Expanded;
+    font-weight: 300;
+}
+
+.widebold{
+    font-family: RF Dewi Expanded;
+    font-weight: bold;
+}
+
+.wideextrabold{
+    font-family: RF Dewi Expanded;
+    font-weight: 900;
+}
+
+
+
+
+/*^^^^^^^^^^^^^^color/size^^^^^^^^^^^^^^*/
+
+h1,h2,h3,h4,h5,h6,p,li,div{
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0.02em;
+    line-height: 1.4em;
+}
+
+a:link{
+    color:black;
+    text-decoration: none;
+
+}
+a:visited{
+    color:black;
+}
+a:hover{ 
+    color:#007854;
+}
+
+.resume a{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 28px;
+    font-family: RF Dewi Expanded;
+    font-weight: 500;
+}
+
+h2{
+    font-family: RF Dewi Expanded;
+    font-weight: 500;
+}
+
+h5{
+   font-size: 15px;
+}
+
+h6{
+    font-size: 11px;
+    color:darkgrey;
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 15px;
+    
+}
+
+::selection{
+    background-color: #007854;
+    color:white;
+}
+
+
+
+/*--------------logo/nav--------------*/
+
+header{
+    width:20%;
+    height:10%;
+    position:fixed;
+    top:3%;
+    left:3%;
+}
+
+
+header .logo{
+    text-align: left;
+    float: left;
+    padding-top: 4%;
+    
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav label{
+    display: none;
+    position:fixed;
+    left:3%;
+    bottom:2%;
+    font-size: 24px;
+}
+
+#toggle{
+    display:none;
+    position:fixed;
+    left:10%;
+    bottom:3%;
+    font-size: 30px;
+}
+
+
+.nav{
+    width:20%;
+    height: 50%;
+    position:fixed;
+    left:2%;
+    bottom:3%;
+    Font-family:RF Dewi Expanded;
+}
+
+.nav ul{
+    position:absolute;
+    padding: 0;
+    list-style: none;
+    bottom:0;
+}
+
+.nav ul li{
+    margin-bottom: 0;
+    padding-top: 8px;
+}
+
+.nav ul li a{
+    font-size: 18px;
+    transition-duration:0.3s;
+    letter-spacing: 0.02em;
+}
+
+.nav ul li a:hover{
+    padding-left: 0.5em;
+    transition-duration:0.3s;
+}
+
+.nav span{
+    font-size: 9px;
+    position:relative;
+    top:-1em;
+    left: -0.3em;
+}
+
+.here a{
+    color:#007854;
+    text-decoration: ;
+}
+
+.customize{
+    width:25%;
+    height: 10%;
+    position:fixed;
+    right:3%;
+    bottom:3%;
+    
+}
+
+.customize ul{
+    position: absolute;
+    bottom:0;
+    right:0;  
+    list-style: none;
+}
+
+
+.customize ul li{
+    margin-left:10px;
+    display:inline-block;
+}
+
+.customize ul li a{
+    font-size:15px;
+    text-decoration: none;
+}
+
+.top a{
+    text-decoration: underline;
+}
+
+
+
+/*--------------mobile--------------*/
+
+@media only screen and (max-width:550px){
+    
+    
+    header{
+        width: 100%;
+        top:0;
+    }
+    
+    
+   .nav label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav .menu {
+        display: none;
+    }
+     
+    .nav .menu{
+        display: none;
+    }
+    
+    #toggle:checked + .menu{
+        display: block;
+    }
+    
+    
+    .nav{
+    width:100%;
+    height: 100%;
+    position:fixed;
+    left: 0;
+    bottom:0;
+    }  
+    
+    .menu{
+    background: white;
+    width:100%;
+    height: 100%;
+    }
+
+    .nav ul{
+    width:100%;
+    height: 75%;
+    list-style: none;
+}
+
+.nav ul li{
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.nav ul li a{
+    font-size: 24px;
+   
+}
+
+    .menu span{
+        display: none;
+    }
+    
+    .customize{
+    width:50%;
+    height: 10%;
+    position:fixed;
+    right:3%;
+    bottom:0;
+    
+}
+
+
+}
+
+
+
+
+

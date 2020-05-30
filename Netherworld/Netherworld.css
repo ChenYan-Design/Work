@@ -1,0 +1,233 @@
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 2em 1em;
+    grid-auto-rows:minmax (200px,auto);
+    padding:3% 3%;
+    align-items: start;
+}
+
+.name{
+    grid-area: 1/3/2/5;
+}
+
+.year{
+    grid-area: 2/3/3/5;
+    color:grey;
+    
+}
+
+.year p{
+        display: flex;
+    align-items: flex-end;
+}
+
+.description{
+    grid-area:1/5/3/9;
+    font-size: 15px;
+}
+
+.description p{
+    margin-bottom: 0.6em;
+}
+
+.Talisman1{
+    grid-area:2/6/3/7;
+}
+.Talisman2{
+    grid-area:1/8/2/9;
+}
+.Talisman3{
+    grid-area:3/4/4/5;
+}
+.Talisman4{
+    grid-area:1/2/2/3;
+}
+.Talisman1:hover{
+    opacity: 0;
+}
+.Talisman2:hover{
+    opacity: 0;
+}
+.Talisman3:hover{
+    opacity: 0;
+}
+.Talisman4:hover{
+    opacity: 0;
+}
+
+
+
+.gallery {
+    grid-area: 4/1/5/9;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    padding-top: 10%;
+}
+
+.image{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+.image img{
+    grid-area: 1/1/2/2;
+    border: 1px solid grey;
+
+}
+
+.image span{
+    grid-area: 1/1/2/2;
+    opacity: 0.0;
+    transition-duration: .5s;
+}
+
+.image span:hover{
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.each{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    padding-bottom: 20%;
+    align-items: flex-start;
+
+}
+
+.each h6{
+    padding-top: 0;
+}
+
+.artivive{
+    grid-area:10/1/11/2;
+}
+
+.video {
+    grid-area: 10/3/12/9;
+    background: black;
+    
+}
+
+
+.nextproject{
+    grid-area: 13/6/14/9;
+}
+
+.nextproject img{
+    padding-top: 3%;
+    
+}
+
+
+
+
+ /*--------------footer--------------*/
+   
+  
+.footer{
+    grid-area: 20/3/21/6;
+} 
+
+.top{
+    grid-area: 20/5/21/9;
+}
+
+
+
+
+
+
+/*--------------mobile--------------*/
+
+
+@media only screen and (max-width:550px){
+    
+    
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 1em;
+    grid-auto-rows:minmax (200px,auto);
+    padding:20% 3% 3% 3%;
+    align-items: start;
+}
+
+.name{
+    grid-area: 2/1/3/2;
+}
+
+.year{
+    grid-area: 3/1/4/2;    
+}
+
+
+.description{
+    grid-area:4/1/5/2;
+}
+
+.Talisman1,.Talisman2,.Talisman3,.Talisman4{
+ display: none;
+    }
+
+
+.gallery {
+    grid-area: 5/1/6/2;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+}
+    
+.image{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+
+.image img{
+    grid-area: 1/1/2/2;
+}
+
+.image span{
+    grid-area: 1/1/2/2;
+    opacity: 1;
+}
+
+.each{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+    
+.artivive{
+    grid-area:6/1/7/2;
+}
+
+.video {
+    grid-area: 7/1/8/2;
+    background: none;
+}
+
+
+.nextproject{
+    grid-area: 10/1/11/2;
+    padding-left: 50%;
+
+}
+    
+
+.footer{
+    grid-area: 22/1/23/2;
+        padding-left: 30%;
+} 
+
+.top{
+    grid-area: 20/1/21/2;
+    padding-left: 30%;
+}
+    
+}
+

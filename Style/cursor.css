@@ -1,0 +1,18 @@
+/*body{
+    cursor: none;
+}
+*/
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e2b9b3;
+    box-shadow: 0 0 35px 35px #e2b9b3;
+    position: fixed;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+

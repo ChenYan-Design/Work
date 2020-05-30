@@ -1,0 +1,61 @@
+
+
+
+/*^^^^^^^^^^^^^^color/size^^^^^^^^^^^^^^*/
+
+
+body{
+    background-color: black;
+    color:white;
+}
+
+a:link{
+    color:white;
+}
+a:visited{
+    color:white;
+}
+a:hover{
+    color:#e2b9b3;
+}
+    
+    
+::-moz-selection {
+ background-color:rgba(226,185,179,0.99);
+    color:black;
+}
+
+::selection{
+    background:rgba(226,185,179,0.99);
+    color:black;
+    
+}
+
+
+h6{
+    color:dimgrey;
+}
+
+.quote{
+    color: #e2b9b3;
+}
+
+.here a{
+    color:#e2b9b3;
+}
+
+.tag{
+   color:#e2b9b3; 
+}
+
+/*--------------mobile--------------*/
+
+@media only screen and (max-width:550px){
+    
+     .menu{
+    background: Black;
+    }
+    
+    
+    
+}
