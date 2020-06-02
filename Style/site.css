@@ -134,7 +134,7 @@ header .logo{
     position:fixed;
     left:10%;
     bottom:3%;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -245,8 +245,11 @@ header .logo{
    .nav label{
         display: block;
         cursor: pointer;
+        font-size: 2em;
 
     }
+    
+
 
     .nav .menu {
         display: none;
@@ -258,9 +261,10 @@ header .logo{
         
     }
     
+
+    
     #toggle:checked + .menu{
-        display: block;
-        
+        display: block;   
     }
     
     
@@ -301,13 +305,21 @@ header .logo{
         display: none;
     }
     
-    .customize{
+.customize{
     width:50%;
     height: 10%;
     position:fixed;
     right:3%;
-    bottom:0;
+    bottom:0;   
+}
     
+.customize ul li{
+    margin-left:1.2em;
+}
+    
+.customize ul li a{
+    font-size:1.3em;
+    text-decoration: none;
 }
 
 
