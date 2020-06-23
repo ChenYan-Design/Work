@@ -40,23 +40,39 @@ div a p{
 }
 
 
-.mexico{
+.sea{
     grid-area: 1/3/2/9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 2em;
+}
+
+
+.flower{
+    grid-area: 3/6/4/8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 2em;
+}
+
+
+.mexico{
+    grid-area: 4/3/5/6;
     display: inline-grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1fr);
     grid-gap: 1em 2em;
 
 }
 
 .sketch{
-    grid-area: 2/5/3/9;
+    grid-area: 5/5/6/9;
     display: inline-grid;
     grid-template-columns: 2fr 2.63fr 2fr;
 }
 
 
 .weekly{
-    grid-area: 3/3/4/9;
+    grid-area: 6/3/7/9;
     display: inline-grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2em 2em;
@@ -67,11 +83,11 @@ div a p{
 }
 
 .isle{
-    grid-area: 4/3/5/9;
+    grid-area: 7/3/8/9;
 }
 
 .shj{
-    grid-area: 5/3/6/7;
+    grid-area: 8/3/9/7;
 }
 
 .shj img{
@@ -79,7 +95,7 @@ div a p{
 }
 
 .newyear{
-    grid-area: 6/3/7/7;
+    grid-area: 9/3/10/7;
     display: inline-grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 2em 2em;
@@ -88,7 +104,7 @@ div a p{
 
 
 .mooncake{
-    grid-area: 7/6/8/9;
+    grid-area: 10/6/11/9;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 2em 2em;
@@ -105,11 +121,11 @@ div a p{
    
   
 .footer{
-    grid-area: 10/3/11/6;
+    grid-area: 15/3/16/6;
 } 
 
 .top{
-    grid-area: 10/5/11/9;
+    grid-area: 15/5/16/9;
 }
 
 /*--------------mobile--------------*/
@@ -125,7 +141,11 @@ div a p{
     padding:20% 3% 3% 3%;
 }
     
-    .container div>.project{
+.container div{
+    padding-bottom: 10%;
+}
+    
+.container div>.project{
     opacity: 1.0; 
     position: inherit;
     width: 100%;
@@ -140,13 +160,28 @@ div a p{
 }
     
     
-    .project p{
-    width: 100%;
+.project p{
+    width: 100%;    
+}
     
+    
+.sea{
+    grid-area: 1/1/2/2;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 2em;
+}
+
+
+.flower{
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em 2em;
 }
 
     .mexico{
-    grid-area: 1/1/2/2;
+    grid-area: 3/1/4/2;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 1em 2em;
@@ -154,29 +189,29 @@ div a p{
 }
 
 .sketch{
-    grid-area: 2/1/3/2;
+    grid-area: 4/1/5/2;
     display: inline-grid;
     grid-template-columns: 1fr;
 }
 
 
 .weekly{
-    grid-area: 3/1/4/2;
+    grid-area: 5/1/6/2;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 2em 2em;
 }
 
 .isle{
-    grid-area: 4/1/5/2;
+    grid-area: 6/1/7/2;
 }
 
 .shj{
-    grid-area: 5/1/6/2;
+    grid-area: 7/1/8/2;
 }
 
 .newyear{
-    grid-area: 6/1/7/2;
+    grid-area: 8/1/9/2;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 2em 2em;
@@ -185,7 +220,7 @@ div a p{
 
 
 .mooncake{
-    grid-area: 7/1/8/2;
+    grid-area: 9/1/10/2;
     display: inline-grid;
     grid-template-columns: 1fr;
     grid-gap: 2em 2em;
