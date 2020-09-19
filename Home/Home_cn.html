@@ -18,17 +18,40 @@
 <title>Chen's Portfolio</title>
 </head>
 <body>
+<!--
 <div class="cursor"></div>
-<script src="../Style/cursor.js">
+<script src="Style/cursor.js">
             </script>
+            -->
+
+<!-- lax.js ---->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+
+<script>
+    window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}    
+    
+    </script>
+
+
+<!-- lax.js ---->
+
 
 
 <header>
 
 <div class="logo">
-  <a href="../Home/Home_cn.html"><img src="../Home/Image/temlogo3.png" width="70px"></a>
+  <a href="Home_cn.html" class="lax" data-lax-opacity="1 0,550 0,600 1"><img src="Image/temlogo3.png" width="130px"></a>
 </div>
-
 <div class="nav">
 <label for="toggle">&#9776;</label>
 <input type="checkbox" id="toggle"/>
@@ -51,34 +74,18 @@
 
 </div>
 
-<!-- moving logo---->
-<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
-
-
-<script>
-    window.onload = function() {
-	lax.setup() // init
-
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
-
-	window.requestAnimationFrame(updateLax)
-}    
-    
-    </script>
-
-
-<!-- moving logo end---->
-
-
-
-
-
 
 
 <div class="container">
+      
+      
+      
+<div id="logosvg">
+    <img src="Image/C.svg" class="rellax" data-rellax-speed="-1">
+    <img class="rellax" data-rellax-speed="4"  src="Image/H.svg">
+    <img class="rellax" data-rellax-speed="-3"  src="Image/E.svg">
+    <img class="rellax" data-rellax-speed="1" src="Image/N.svg">
+</div> 
        
 <div class="chen">
     <p>晏晨是一名视觉设计师。擅长<a>平面设计<img src="image/Type.gif" width="20%"></a>，<a>插画<img src="image/Princess Mononoke.jpg" width="20%"></a>，<a>MG动画<img src="image/A-LIGHT-IN-THE-MOON.gif" width="20%"></a>，并略懂<a>网页开发<img src="image/This-website-for-example.jpg" width="20%"></a>。 </p>
@@ -86,110 +93,81 @@
 </div>
 
   
-       
-        
-    <div class="personal">
-          <p>个人作品 &#8595;</p>
-    </div>
-       
-    <div class="commercial">
-          <a href="../Commercial/commercial.html">商业案例 &#8594;</a>
-    </div>
-    
-      <div class="illustration">
-         <a href="../Illustration/Illustration_cn.html">插画合集 &#8594;</a>
-    </div>
-     
-        
-            
-        
+<div class="projects">  
          
+                   
+          <p class="light">个人作品 &#8595;</p>
+       
+          <a  class="light" href="../Illustration/Illustration_cn.html">商业案例 &#8594;</a>
+    
+         <a class="light" href="../Illustration/Illustration_cn.html">插画合集 &#8594;</a>
+     
+</div> 
+        
+
 <div class="babel">
-        <a href="../Babel/Babel_cn.html" >
+        <a href="../Babel/Babel_cn.html">
   <img src="Image/Library-of-Babel-2.jpg" width="100%">
        
-        <div class="babeltitle">
-        <p class="tag">版式设计 '18</p>
             <p class="title">巴别图书馆</p> 
-        </div>
+                    <p class="tag">版式设计</p>
+
         </a>
-</div>
+</div>    
         
-        
-        
+         
 <div class="netherworld">
         <a href="../Netherworld/Netherworld_cn.html">
-       
-        <div class="ntetherworldtitle">
-        <p class="tag">毕业作品 '19</p>
+        
+          <img class="" src="Image/TheNetherworld.jpg" width="100%">
+              
             <p class="title">冥界</p>
-        </div>
-        
-          <img class="lax" data-lax-preset="" src="Image/TheNetherworld.png" width="100%">
+            <p class="tag">毕业设计</p>
         </a>
-</div>
-     
-        
-<div class="flash">
-        <a href="../Flash/Flash_cn.html">
+</div>       
+         
+ 
+ 
+ <div class="flash">
+        <a href="../Flash/Flash_cn">
   <img src="Image/Flash_Cover.jpg" width="100%">
        
-        <div class="flashtitle">
-        <p class="tag">立体杂志 '18</p>
-            <p class="title">投影盒子</p>
-        </div>
+        <p class="title">投影盒子</p>
+        <p class="tag">立体杂志</p>
         </a>
-</div>  
- 
- 
+</div>
+
+
 <div class="alight">
         <a href="../Light/Light_cn.html">
   <img src="Image/ALightInTheMoon2.gif" width="100%">
        
-        <div class="alighttitle">
-        <p class="tag">动画 '19</p>
-             <p class="title">月之光</p> 
-        </div>
+        <p class="title">月之光</p>
+        <p class="tag">动画</p>
+
         </a>
 </div>
+ 
+
       
-      
+          
 <div class="iteration">
         <a href="../30iteration/Iteration_cn.html">
   <img src="Image/30-Iterations-Cover.gif"width="100%">
        
-        <div class="iterationtitle">
-        <p class="tag">海报设计 '17</p>
-             <p class="title">30次迭代</p> 
-        </div>
+        <p class="title">30次迭代</p> 
+        <p class="tag">海报设计</p>
+
         </a>
-</div>
-      
-          
-    
-
-     <div class="collage">
-<a href="Image/2001-collage.jpg" data-lightbox="mygallery" data-title="2001 - 拼贴 '17"><img class="lax" data-lax-preset="lazy-200" src="Image/2001-collage-s.png" width="100%" >
-</a>
-</div>
-
-   
-  
-<div class="clay">
-<a href="Image/clay.png" data-lightbox="mygallery" data-title="小王子 - 手工软陶 '20"><img class="lax" data-lax-preset="lazy-200" src="Image/clay-s.png" width="80%" >
+</div>    
+     
+     
+          <div class="collage">
+<a href="Image/2001-collage.jpg" data-lightbox="mygallery" data-title="2001 - 拼贴 '17"><img src="Image/2001-collage-s.png" width="100%" >
 </a>
 </div>
 
 
-
-    <div class="commercial2">
-          <a href="../Commercial/commercial.html">商业案例 &#8594;</a>
-    </div>
-    
-      <div class="illustration2">
-         <a href="../Illustration/Illustration_cn.html">插画合集 &#8594;</a>
-    </div>
-    
   
 <div class="email">
        <span class="light">
@@ -216,7 +194,14 @@
 
    
 
-    
+<!-- rellax.js ---->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+<script>
+  var rellax = new Rellax('.rellax');  
+</script>
+
+<!-- rellax.js ---->
 
     
     

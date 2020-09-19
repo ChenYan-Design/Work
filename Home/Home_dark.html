@@ -19,15 +19,40 @@
 <title>Chen's Portfolio</title>
 </head>
 <body>
+
+<!--
 <div class="cursor"></div>
-<script src="../Style/cursor.js">
+<script src="Style/cursor.js">
             </script>
+            -->
+            
+            
+<!-- lax.js ---->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+
+<script>
+    window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}    
+    
+    </script>
+
+
+<!-- lax.js ---->
 
 
 <header>
 
 <div class="logo">
-  <a href="../Home/Home.html"><img src="../Home/Image/enlogo3.png" alt="For" width="100px"></a>
+  <a href="Home_dark.html" class="lax" data-lax-opacity="1 0,550 0,600 1"><img src="Image/enlogo3.png" width="150px"></a>
 </div>
 
 <div class="nav">
@@ -52,7 +77,7 @@
 
 </div>
 
-<!-- moving logo---->
+<!-- moving logo
 <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 
 
@@ -71,7 +96,7 @@
     </script>
 
 
-<!-- moving logo end---->
+-->
 
 
 
@@ -80,6 +105,15 @@
 
 
 <div class="container">
+      
+      
+<div id="logosvg">
+    <img src="Image/C_w.svg" class="rellax" data-rellax-speed="-1">
+    <img class="rellax" data-rellax-speed="4"  src="Image/H_w.svg">
+    <img class="rellax" data-rellax-speed="-3"  src="Image/E_w.svg">
+    <img class="rellax" data-rellax-speed="1" src="Image/N_w.svg">
+</div> 
+      
        
 <div class="chen">
     <p class="wide">Chen Yan is a visual artist who <a>design<img src="image/Type.gif" width="20%"></a>, <a>draw<img src="image/Princess Mononoke.jpg" width="20%"></a>, <a>animate<img src="image/A-LIGHT-IN-THE-MOON.gif" width="20%"></a>, and <a>code<img src="image/This-website-for-example.jpg" width="20%"></a>. </p>
@@ -89,7 +123,7 @@
   
        
         
-    <div class="personal">
+<!--    <div class="personal">
           <p>Personal Works &#8595;</p>
     </div>
        
@@ -100,19 +134,29 @@
       <div class="illustration">
          <a href="../Illustration/Illustration_dark.html">Illustration Gallery &#8594;</a>
     </div>
+  -->   
+       
+<div class="projects">  
+         
+                   
+          <p class="light">Personal &#8595;</p>
+       
+          <a  class="light" href="../Commercial/Commercial/commercial.html">Commercial &#8594;</a>
+    
+         <a class="light" href="../Illustration/Illustration_dark.html">Illustration &#8594;</a>
      
+</div>  
         
             
         
          
 <div class="babel">
-        <a href="../Babel/Babel_dark.html" >
+        <a href="../Babel/Babel_dark.html">
   <img src="Image/Library-of-Babel-2.jpg" width="100%">
        
-        <div class="babeltitle">
-        <p class="tag">Typography '18</p>
             <p class="title">Library of Babel</p> 
-        </div>
+                    <p class="tag">Typography</p>
+
         </a>
 </div>
         
@@ -120,13 +164,11 @@
         
 <div class="netherworld">
         <a href="../Netherworld/Netherworld_dark.html">
-       
-        <div class="ntetherworldtitle">
-        <p class="tag">Thesis '19</p>
-            <p class="title">The Netherworld</p>
-        </div>
         
-          <img class="lax" data-lax-preset="" src="Image/TheNetherworld.png" width="100%">
+          <img class="" src="Image/TheNetherworld.jpg" width="100%">
+              
+            <p class="title">The Netherworld</p>
+            <p class="tag">Motion Graphic / AR</p>
         </a>
 </div>
      
@@ -135,10 +177,8 @@
         <a href="../Flash/Flash_dark.html">
   <img src="Image/Flash_Cover.jpg" width="100%">
        
-        <div class="flashtitle">
-        <p class="tag">Zine '18</p>
-            <p class="title">Flash</p>
-        </div>
+        <p class="title">Flash</p>
+        <p class="tag">3D Zine </p>
         </a>
 </div>  
  
@@ -147,10 +187,9 @@
         <a href="../Light/Light_dark.html">
   <img src="Image/ALightInTheMoon2.gif" width="100%">
        
-        <div class="alighttitle">
-        <p class="tag">Animation '19</p>
-             <p class="title">A Light In The Moon</p> 
-        </div>
+        <p class="title">A Light In The Moon</p>
+        <p class="tag">Animation</p>
+
         </a>
 </div>
       
@@ -159,10 +198,9 @@
         <a href="../30iteration/Iteration_dark.html">
   <img src="Image/30-Iterations-Cover.gif"width="100%">
        
-        <div class="iterationtitle">
-        <p class="tag">Poster '17</p>
-             <p class="title">30 Iterations</p> 
-        </div>
+        <p class="title">30 Iterations</p> 
+        <p class="tag">Poster</p>
+
         </a>
 </div>
       
@@ -170,27 +208,21 @@
     
 
      <div class="collage">
-<a href="Image/2001-collage.jpg" data-lightbox="mygallery" data-title="2001 - Collage '17"><img class="lax" data-lax-preset="lazy-200" src="Image/2001-collage-s.png" width="100%" >
+<a href="Image/2001-collage.jpg" data-lightbox="mygallery" data-title="2001 - Collage '17"><img src="Image/2001-collage-s.png" width="100%" >
 </a>
 </div>
+
 
    
   
-<div class="clay">
+<!-- <div class="clay">
 <a href="Image/clay.png" data-lightbox="mygallery" data-title="The Little Prince - clay art '20"><img class="lax" data-lax-preset="lazy-200" src="Image/clay-s.png" width="80%" >
 </a>
-</div>
+</div>-->
 
 
 
-    <div class="commercial2">
-          <a href="../Commercial/commercial.html">Commercial Works &#8594;</a>
-    </div>
-    
-      <div class="illustration2">
-         <a href="../Illustration/Illustration_dark.html">Illustration Gallery &#8594;</a>
-    </div>
-    
+
   
 <div class="email">
        <span class="widelight">
@@ -217,7 +249,14 @@
 
 
 
-    
+<!-- rellax.js ---->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+<script>
+  var rellax = new Rellax('.rellax');  
+</script>
+
+<!-- rellax.js ----> 
 
     
     

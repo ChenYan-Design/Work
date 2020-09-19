@@ -16,7 +16,7 @@ a:visited{
     color:white;
 }
 a:hover{
-    color:#e2b9b3;
+    color:#007854;
 }
     
     
@@ -25,10 +25,16 @@ a:hover{
     color:black;
 }
 
+/*
 ::selection{
     background:rgba(226,185,179,0.99);
-    color:black;
-    
+    color:black;   
+}
+*/
+
+::selection{
+    background:rgba(3,120,84,0.99);
+    color:white;   
 }
 
 
@@ -37,16 +43,18 @@ h6{
 }
 
 .quote{
-    color: #e2b9b3;
+    color: #007854;
 }
 
 .here a{
-    color:#e2b9b3;
+    color:#007854;
 }
 
+/*
 .tag{
-   color:#e2b9b3; 
+   color:#007854; 
 }
+*/
 
 /*--------------mobile--------------*/
 
