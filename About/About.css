@@ -16,7 +16,7 @@
 }
 
 .hi{
-        grid-area:1/1/2/3;
+    grid-area:1/1/2/3;
 }
 
 .intro{
@@ -29,17 +29,6 @@
 
 .intro p a{
     text-decoration:underline; 
-}
-
-.intro a>img { 
-    display: none; 
-}
-
- .intro a:hover>img { display: block; }
-
-.intro img{
-    position:absolute;
-    right:30%;
 }
 
 
