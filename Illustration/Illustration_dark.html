@@ -6,10 +6,8 @@
 <link href="Illustration.css" rel="stylesheet" type="text/css" />
 <link href="../Style/site.css" rel="stylesheet" type="text/css" />
 <link href="../Style/site_dark.css" rel="stylesheet" type="text/css" />
-<link href="../Style/cursor_dark.css" rel="stylesheet" type="text/css" />
-<link href="../Style/font/RFDewi.css" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="../Style/font/RFDewi.css" rel="stylesheet" type="text/css" />
 
 <link href="lightbox.min.css" rel="stylesheet" type="text/css" />
 <script src="lightbox-plus-jquery.min.js"></script>
@@ -18,29 +16,51 @@
 <title>Chen's Portfolio - Illustration</title>
 </head>
 <body>
-<div class="cursor"></div>
-<script src="../Style/cursor.js">
-            </script>
+
+           
+<!-- lax.js ---->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+
+<script>
+    window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}    
+    
+    </script>
+
+
+<!-- lax.js ---->
+            
+            
+            
+            
 
 <header>
 <div class="logo">
-  <a href="../Home/Home_dark.html"><img src="../Home/Image/enlogo3.png" width="100px"></a>
+  <a href="../Home/Home_dark.html" class="lax" data-lax-opacity="1 0,550 0,600 1"><img src="../Home/Image/enlogo3.png" width="150px"></a>
 </div>
 
 <div class="nav">
 <label for="toggle">&#9776;</label>
 <input type="checkbox" id="toggle"/>
+
 <div class="menu">
  <ul>
-    <li><a href="../Home/Home_dark.html"><span>01</span>Personal</a></li>
-    <li><a href="../Commercial/commercial.html"><span>02</span>Commercial</a></li>
-    <li class="here"><a href="../Illustration/Illustration_dark.html"><span >03</span>Illustration</a>
-    </li>
-     <li><a href="../About/About_dark.html" title="Wanna get to know me?"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>About</a></li>
-     <li><a href="mailto:1228yanchen@gmail.com" Target=“_blank” title="Shoot me an email"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Contact</a></li>
+    <li class="here"><a href="../Home/Home_dark.html">Work</a></li>
+     <li><a href="../About/About_dark.html" title="Wanna get to know me?">About</a></li>
  </ul>
  </div>
 </div>
+
+
 
 <div class="customize">
    <ul>    
@@ -54,72 +74,61 @@
 
 <div class="container">
     
+<div id="logosvg">
+    <img src="../Home/Image/C_w.svg" class="rellax" data-rellax-speed="-1">
+    <img class="rellax" data-rellax-speed="4"  src="../Home/Image/H_w.svg">
+    <img class="rellax" data-rellax-speed="-3"  src="../Home/Image/E_w.svg">
+    <img class="rellax" data-rellax-speed="1" src="../Home/Image/N_w.svg">
+</div> 
     
+           
+ <div class="chen"  id="illustration" >
+    <p class="wide">Chen Yan is a visual artist who <a>designs<img src="../Home/image/Type.gif" width="20%"></a>, <a>draws<img src="../Home/image/Princess Mononoke.jpg" width="20%"></a>, <a>animates<img src="../Home/image/A-LIGHT-IN-THE-MOON.gif" width="20%"></a>, and <a>codes<img src="../Home/image/This-website-for-example.jpg" width="20%"></a>. </p>
+</div>        
+           
+ <div class="projects">  
+                  
+          <a class="light" href="../Home/Home_dark.html#personal">Personal &#8594;</a>
+       
+          <a  class="light" href="../Commercial/Commercial_dark.html#commercial">Commercial &#8594;</a>
     
-            <div class="sea" data-aos="fade-in">  
-              
-      <span class="project" >
-      <h2 class="wide">Under the Sea</h2>
-      <h6>Watercolor On Paper '20</h6>
+         <p class="light">Illustration &#8595;</p>
      
-      </span>
-            
-    <a href="image/UnderSea2.jpg" data-lightbox="mygallery" data-title="Under the Sea"><img src="image/UnderSea.jpg" alt="UnderSea" width="100%" >
-          <p>Under the Sea</p></a>
+</div>          
            
-    </div>
-   
-   
-   
-    <div class="flower" data-aos="fade-in">  
-          
-      <span class="project" >
-      <h2 class="wide">Summer</h2>
-      <h6>Acrylic On Paper '20</h6>
-      
-      </span>
-        
-    <a href="image/Summer2020_1.jpg" data-lightbox="mygallery" data-title="Summer 2020 1"><img src="image/Summer2020_1.jpg" alt="Summer 2020" width="100%" >
-          <p>Summer 1</p></a>
-               
-    <a href="image/Summer2020_2.jpg" data-lightbox="mygallery"  data-title="Summer 2020 2" ><img src="image/Summer2020_2.jpg" alt="Summer 2020"width="100%" >
-    <p>Summer 2</p></a> 
-
-    </div>
-    
-
-    
-    <div class="mexico" data-aos="fade-in">  
-      
-          
-      <span class="project" >
-      <h2 class="wide">Mexico</h2>
-      <h6>Acrylic On Canvas '20</h6>
-
-      
-      </span>
-      
-       
-    <a href="image/Cactusandcat.jpg" data-lightbox="mygallery" data-title="Cactus and cat"><img src="image/Cactusandcat.jpg" alt="Cactusandcat" width="100%" >
-          <p>Cactus and Cat</p></a>
            
-            
-    <a href="image/guanahuato.jpg" data-lightbox="mygallery"  data-title="Guanahuato" ><img src="image/guanahuato.jpg" alt="Guanahuato"width="100%" >
-    <p>Guanahuato</p></a> 
-
-    </div>
-    
-
-    
-     <div class="weekly" data-aos="fade-in" data-aos-duration="400"> 
+   <div class="amelie">
+         <a href="image/Amelie.jpg" data-lightbox="mygallery" data-title="Amélie"><img src="image/Amelie_s.jpg" width="100%" >
+        <p>Amélie</p> 
+        </a>
+     </div>
+      
+      
+     <div class="llama">
+         <a href="image/Llama.jpg" data-lightbox="mygallery" data-title="Girl with llama"><img src="image/LLama_s.jpg" width="100%" >
+        <p>Girl with llama</p> 
+        </a>
+     </div>
        
-    <span class="project">
-    <h2 class="wide">Inspiration and Impression</h2>
-      <h6>Digital Illustration '18</h6>
-    
-    
-    </span> 
-        
+
+     
+     <div class="sea">
+         <a href="image/UnderSea.jpg" data-lightbox="mygallery" data-title="Under The Sea"><img src="image/Sea_s.jpg"  width="100%" >
+        <p>Under the Sea</p> 
+        </a>
+     </div>
+     
+     
+     <div class="flower">     
+     </div>
+     
+     
+     <div class="mexico">  
+     </div>
+     
+     
+     <div class="weekly">
+         
     <a href="image/Blade-Runner.jpg" data-lightbox="mygallery" data-title="Blade Runner" ><img src="image/Blade-Runner.jpg" alt="Blade-Runner" width="100%" >
     <p>Blade Runner</p></a>
     
@@ -134,80 +143,37 @@
      
     <a href="image/Frank-Chimero.jpg" data-lightbox="mygallery" data-title="Frank Chimero" ><img src="image/Frank-Chimero.jpg" alt="Frank-Chimero" width="100%" >
     <p>Frank Chimero</p></a>
-    
-
-     
-    </div>
-    
-    
-    <div class="isle" data-aos="fade-in" data-aos-duration="400">
-    
-    <span class="project">
-    <h2 class="wide">Isle</h2>
-      <h6>Digital Painting '17</h6>
-      <p></p></span> 
-    
-    <a href="image/Isle.jpg" data-lightbox="mygallery" data-title="Isle" ><img src="image/Isle.jpg" alt="Isle" width="100%" ></a>
-    
-
-     
-    </div>
-    
-     
-    <div class="shj" data-aos="fade-in"> 
-    
-    <span class="project">
-     <h2 class="wide">Classic of Mountains and Seas</h2>
-      <h6>Digital Painting '16</h6>
-      <p>“The Classic of Mountains and Seas” is a Chinese classic text and compilation of mythic geography and myth. It is an ancient writing coming down for more than two thousand years, and it records a great number of mythical monsters in mythologies and folktales.</p></span>
-    
-    <a href="image/classic-of-mountains-and-seas.jpg" data-lightbox="mygallery" data-title="Classic of Mountains and Seas" ><img src="image/classic-of-mountains-and-seas.jpg" alt="classic-of-mountains-and-seas" width="100%" >
-    <p></p></a>
-    
-    
-     
-    </div>
-    
-    <div class="newyear" data-aos="fade-in" data-aos-duration="400">
-    
-          
-    <span class="project">
-     <h2 class="wide">New Year</h2>
-    <h6>Digital Painting '16</h6>
-        <p></p></span>
-
-    
-    <a href="image/2017_1.jpg" data-lightbox="mygallery" data-title="2017_1" ><img src="image/2017_1.jpg" alt="2017_1" width="100%" >
-    <p>Set Out</p></a>
-     
-    <a href="image/2017_2.jpg" data-lightbox="mygallery" data-title="2017_2" ><img src="image/2017_2.jpg" alt="2017_2" width="100%" >
-     <p>Contentment</p></a>
-
-     
-       
-
-    </div>
-   
-   
-    
-    <div class="mooncake" data-aos="fade-in" data-aos-duration="400">
-        
-                 
-    <span class="project">
-     <h2 class="wide">Mid-Autumn Festival</h2>
-    <h6>Watercolor '16</h6>
-    <p>A mooncake is a Chinese bakery product traditionally eaten during the Mid-Autumn Festival. The festival is about lunar appreciation and Moon watching, and mooncakes are regarded as an indispensable delicacy. </p></span>
          
-         
-    <a href="image/mooncake1.jpg" data-lightbox="mygallery" data-title="mooncake1" ><img src="image/mooncake1.jpg" alt="mooncake1" width="100%" ></a>
+     </div>
+     
+     
+     
+     <div class="island">
+          <a href="image/Isle.jpg" data-lightbox="mygallery" data-title="Isle" ><img src="image/Isle.jpg" width="100%" >
+          <p>Isle</p> </a>
+      </div>
+      
+      <div class="shj">
+           <a href="image/classic-of-mountains-and-seas.jpg" data-lightbox="mygallery" data-title="Classic of Mountains and Seas" ><img src="image/classic-of-mountains-and-seas.jpg" alt="classic-of-mountains-and-seas" width="100%" >
+           <p>Classic of Mountains and Seas</p> </a>
+      </div>
+      
+      <div class="newyear">
+           <a href="image/2017_1.jpg" data-lightbox="mygallery" data-title="2017_1" ><img src="image/2017_1.jpg" alt="2017_1" width="100%" >
+           <p>Set Out</p></a>
+     
+           <a href="image/2017_2.jpg" data-lightbox="mygallery" data-title="2017_2" ><img src="image/2017_2.jpg" alt="2017_2" width="100%" >
+           <p>Contentment</p></a>
+      </div>
+      
+      <div class="mooncake">
+           <a href="image/mooncake1.jpg" data-lightbox="mygallery" data-title="mooncake1" ><img src="image/mooncake1.jpg" alt="mooncake1" width="100%" >
+           <p>Mooncakes</p></a>
         
-    <a href="image/mooncake2.jpg" data-lightbox="mygallery" data-title="mooncake2" ><img src="image/mooncake2.jpg" alt="mooncake2" width="100%" ></a>
+           <a href="image/mooncake2.jpg" data-lightbox="mygallery" data-title="mooncake2" ><img src="image/mooncake2.jpg" alt="mooncake2" width="100%" ></a>
         
-    <a href="image/mooncake3.jpg" data-lightbox="mygallery" data-title="mooncake3" ><img src="image/mooncake3.jpg" alt="mooncake3" width="100%" ></a>
-
-    </div>
-    
-    
+           <a href="image/mooncake3.jpg" data-lightbox="mygallery" data-title="mooncake3" ><img src="image/mooncake3.jpg" alt="mooncake3" width="100%" ></a>
+      </div>
     
     
         <div class="footer">
@@ -222,12 +188,17 @@
      
 </div>
     
+  
+  
+<!-- rellax.js ---->
 
- 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
+
+<script>
+  let rellax = new Rellax('.rellax');  
+</script>
+
+<!-- rellax.js ---->
   
   
 </body>

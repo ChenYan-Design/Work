@@ -36,84 +36,116 @@ div a p{
 
 .project p{
     width: 90%;
-    
 }
 
+
+#logosvg{
+    grid-area: 1/1/2/9;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.chen{
+    grid-area: 3/3/4/7;
+    padding-top: 10%;
+}
+.chen p{
+    font-size:24px;
+}
+.chen a{
+    text-decoration:underline; 
+    font-size:24px;
+}
+.chen a>img { 
+    display: none; 
+}
+.chen a:hover>img { display: block; }
+.chen img{
+    position:absolute;
+    right:3%;
+    top: 60%;
+}
+
+
+
+.projects{
+    grid-area:  5/3/6/9;
+    position: sticky;
+    top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: baseline;
+}
+
+.projects p{
+     display: inline;
+     font-size: 36px;
+     color:#007854;
+}
+
+.projects a{
+    font-size: 36px;
+
+}
+
+
+div a p{
+    font-size: 15px;
+    line-height: 1em;
+    display: inline-block;
+    font-family: RF Dewi Expanded;
+    font-weight: 400;
+    transition-duration: 0.3s;
+}
+
+
+
+.amelie{
+    grid-area:  7/3/8/5;
+}
+
+.llama{
+    grid-area:  7/5/8/7;
+}
 
 .sea{
-    grid-area: 1/3/2/9;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em 2em;
+    grid-area:  7/7/8/9;
 }
 
-
-.flower{
-    grid-area: 3/6/4/8;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em 2em;
-}
-
-
-.mexico{
-    grid-area: 4/3/5/6;
-    display: inline-grid;
-    grid-template-columns: repeat(1fr);
-    grid-gap: 1em 2em;
-
-}
-
-.sketch{
-    grid-area: 5/5/6/9;
-    display: inline-grid;
-    grid-template-columns: 2fr 2.63fr 2fr;
-}
 
 
 .weekly{
-    grid-area: 6/3/7/9;
-    display: inline-grid;
+    grid-area:  10/3/11/9;
+    display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 2em 2em;
+    grid-gap: 1em 1em;
+    align-items: start;
 }
 
-.weekly img{
-    border: 1px solid white;
-}
-
-.isle{
-    grid-area: 7/3/8/9;
+.island{
+    grid-area:  11/3/12/9;
 }
 
 .shj{
-    grid-area: 8/3/9/7;
-}
-
-.shj img{
-    border: 1px solid grey;
+    grid-area:  12/3/13/7;
 }
 
 .newyear{
-    grid-area: 9/3/10/7;
-    display: inline-grid;
+    grid-area:  13/5/14/9;
+    display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 2em 2em;
+    grid-gap: 1em 1em;
 }
-
-
 
 .mooncake{
-    grid-area: 10/6/11/9;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em 2em;
-
+    grid-area:  14/3/15/9;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em 1em;   
 }
 
-.mooncake a{
-    border: 1px solid black;
-}
 
 
 
@@ -141,96 +173,87 @@ div a p{
     padding:20% 3% 3% 3%;
 }
     
-.container div{
-    padding-bottom: 10%;
-}
-    
-.container div>.project{
-    opacity: 1.0; 
-    position: inherit;
-    width: 100%;
-}
-
-
-.container .project{
-    position:fixed;
-    left:3%;
-    top: 20%;
-    width: 25%;
-}
-    
-    
-.project p{
-    width: 100%;    
-}
-    
-    
-.sea{
+#logosvg{
     grid-area: 1/1/2/2;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em 2em;
 }
-
-
-.flower{
-    grid-area: 2/1/3/2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em 2em;
-}
-
-    .mexico{
+    
+    
+.chen{
     grid-area: 3/1/4/2;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em 2em;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.sketch{
-    grid-area: 4/1/5/2;
-    display: inline-grid;
-    grid-template-columns: 1fr;
+.chen p{
+    grid-area: 1/2/2/4;
+    margin-top: 40%;
+    font-size: 1.2em;
 }
+
+.chen a{
+    text-decoration:underline;
+    font-size: 1em;
+}
+
+.chen a:hover>img { display: none; }
+
+.projects{
+    grid-area:  5/1/6/2;
+}
+
+.projects p{
+     font-size: 1em;
+}
+
+.projects a{
+    font-size: 0.9em;
+}
+    
+div a p{
+    font-size: 12px;
+}
+    
+
+ .amelie{
+    grid-area:  7/1/8/2;
+}
+
+.llama{
+    grid-area:  8/1/9/2;
+}
+
+.sea{
+    grid-area:  9/1/10/2;
+}
+
 
 
 .weekly{
-    grid-area: 5/1/6/2;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em 2em;
+    grid-area:  10/1/11/2;
+    grid-template-columns: 1fr 1fr;
 }
 
-.isle{
-    grid-area: 6/1/7/2;
+.island{
+    grid-area:  11/1/12/2;
 }
 
 .shj{
-    grid-area: 7/1/8/2;
+    grid-area:  12/1/13/2;
 }
 
 .newyear{
-    grid-area: 8/1/9/2;
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em 2em;
+    grid-area:  13/1/14/2;
 }
-
-
 
 .mooncake{
-    grid-area: 9/1/10/2;
-    display: inline-grid;
+    grid-area:  14/1/15/2;
     grid-template-columns: 1fr;
-    grid-gap: 2em 2em;
-
 }
-
-.mooncake a{
-    border: 1px solid grey;
-}
-
+    
+    
+    
+    
+    
 .top{
     grid-area: 33/1/34/2;
     padding-left: 20%;

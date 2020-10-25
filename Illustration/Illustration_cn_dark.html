@@ -11,8 +11,6 @@
 <link href="../Style/site_dark.css" rel="stylesheet" type="text/css" />
 <link href="../Style/cursor_dark.css" rel="stylesheet" type="text/css" />
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 <link href="lightbox.min.css" rel="stylesheet" type="text/css" />
 <script src="lightbox-plus-jquery.min.js"></script>
      
@@ -20,13 +18,31 @@
 <title>Chen's Portfolio - Illustration</title>
 </head>
 <body>
-<div class="cursor"></div>
-<script src="../Style/cursor.js">
-            </script>
+
+<!-- lax.js ---->
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+
+<script>
+    window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}    
+    
+    </script>
+
+<!-- lax.js ---->
 
 <header>
+
 <div class="logo">
-  <a href="../Home/Home_cn_dark.html"><img src="../Home/Image/temlogo5.png" width="70px"></a>
+  <a href="../Home/Home_cn_dark.html" class="lax" data-lax-opacity="1 0,550 0,600 1"><img src="../Home/Image/temlogo5.png" width="130px"></a>
 </div>
 
 <div class="nav">
@@ -34,15 +50,13 @@
 <input type="checkbox" id="toggle"/>
 <div class="menu">
  <ul>
-    <li><a href="../Home/Home_cn_dark.html"><span>01</span>个人作品</a></li>
-    <li><a href="../Commercial/commercial.html"><span>02</span>商业案例</a></li>
-    <li class="here"><a href="Illustration_cn_dark.html"><span>03</span>插画合集</a>
-    </li>
-     <li><a href="../About/About_cn_dark.html" title="了解我的详细信息"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>关于我</a></li>
-     <li><a href="mailto:1228yanchen@gmail.com" Target=“_blank” title="给我发个邮件吧"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>联系我</a></li>
+    <li class="here"><a href="Illustration_cn_dark.html">我的作品</a></li>
+
+     <li><a href="../About/About_cn_dark.html" title="了解我的详细信息">关于我</a></li>
  </ul>
-    </div>
+ </div>
 </div>
+
 
 <div class="customize">
    <ul>    
@@ -55,68 +69,64 @@
 <!---------nav end----------->
 
 <div class="container">
+  
+  
+<div id="logosvg">
+    <img src="../Home/Image/C_w.svg" class="rellax" data-rellax-speed="-1">
+    <img class="rellax" data-rellax-speed="4"  src="../Home/Image/H_w.svg">
+    <img class="rellax" data-rellax-speed="-3"  src="../Home/Image/E_w.svg">
+    <img class="rellax" data-rellax-speed="1" src="../Home/Image/N_w.svg">
+</div>  
+       
+<div class="chen" id="commercial">
+    <p>晏晨是一名视觉设计师。擅长<a>平面设计<img src="../Home/image/Type.gif" width="20%"></a>，<a>插画<img src="../Home/image/Princess Mononoke.jpg" width="20%"></a>，<a>MG动画<img src="../Home/image/A-LIGHT-IN-THE-MOON.gif" width="20%"></a>，并略懂<a>网页开发<img src="../Home/image/This-website-for-example.jpg" width="20%"></a>。 </p>
+</div>
+  
+  
+   
+<div class="projects">                  
+          <a class="light" href="../Home/Home_cn_dark.html#personal">个人作品 &#8594;</a>     
+         <a class="light" href="../Commercial/Commercial_cn_dark.html#commercial">商业案例 &#8594;</a> 
+        <p class="light">插画合集 &#8595;</p>   
+</div>   
+   
+   
     
-<div class="sea" data-aos="fade-in">  
-              
-      <span class="project" >
-      <h2 class="wide">海面之下</h2>
-      <h6>水彩 '20</h6>
+     <div class="amelie">
+         <a href="image/Amelie.jpg" data-lightbox="mygallery" data-title="天使爱美丽"><img src="image/Amelie_s.jpg" width="100%" >
+        <p>天使爱美丽</p> 
+        </a>
+     </div>
+      
+      
+     <div class="llama">
+         <a href="image/Llama.jpg" data-lightbox="mygallery" data-title="女孩的羊驼"><img src="image/LLama_s.jpg" width="100%" >
+        <p>女孩的羊驼</p> 
+        </a>
+     </div>
+       
+
      
-      </span>
-            
-    <a href="image/UnderSea2.jpg" data-lightbox="mygallery" data-title="海面之下"><img src="image/UnderSea.jpg" alt="海面之下" width="100%" >
-          <p>海面之下</p></a>
-           
-    </div>
-   
-   
-   
-    <div class="flower" data-aos="fade-in">  
-          
-      <span class="project" >
-      <h2 class="wide">夏天</h2>
-      <h6>丙烯绘画 '20</h6>
-      
-      </span>
-        
-    <a href="image/Summer2020_1.jpg" data-lightbox="mygallery" data-title="夏天1"><img src="image/Summer2020_1.jpg" alt="夏天" width="100%" >
-          <p>夏天1</p></a>
-               
-    <a href="image/Summer2020_2.jpg" data-lightbox="mygallery"  data-title="夏天2" ><img src="image/Summer2020_2.jpg" alt="夏天" width="100%" >
-    <p>夏天2</p></a> 
-
-    </div>
-
-    
-    <div class="mexico" data-aos="fade-in">  
-      
-          
-      <span class="project" >
-      <h2 class="wide">墨西哥</h2>
-      <h6>丙烯绘画 '20</h6>
-
-      
-      </span>
-      
-       
-    <a href="image/Cactusandcat.jpg" data-lightbox="mygallery" data-title="仙人掌和猫"><img src="image/Cactusandcat.jpg" alt="Cactusandcat" width="100%" >
-          <p>仙人掌和猫</p></a>
-           
-            
-    <a href="image/guanahuato.jpg" data-lightbox="mygallery"  data-title="瓜纳华托" ><img src="image/guanahuato.jpg" alt="Guanahuato"width="100%" >
-    <p>瓜纳华托</p></a> 
-
-    </div>
-        
-     <div class="weekly" data-aos="fade-in" data-aos-duration="400"> 
-       
-    <span class="project">
-    <h2 class="wide">周印象</h2>
-      <h6>iPad插画 '18</h6>
-    
-    
-    </span> 
-        
+     <div class="sea">
+         <a href="image/UnderSea.jpg" data-lightbox="mygallery" data-title="海面之下"><img src="image/Sea_s.jpg"  width="100%" >
+        <p>海面之下</p> 
+        </a>
+     </div>
+     
+     
+     <div class="flower">
+         
+     </div>
+     
+     
+     <div class="mexico">
+         
+         
+     </div>
+     
+     
+     <div class="weekly">
+         
     <a href="image/Blade-Runner.jpg" data-lightbox="mygallery" data-title="银翼杀手" ><img src="image/Blade-Runner.jpg" alt="Blade-Runner" width="100%" >
     <p>银翼杀手</p></a>
     
@@ -131,78 +141,37 @@
      
     <a href="image/Frank-Chimero.jpg" data-lightbox="mygallery" data-title="Frank Chimero" ><img src="image/Frank-Chimero.jpg" alt="Frank-Chimero" width="100%" >
     <p>Frank Chimero</p></a>
-    
-
-     
-    </div>
-    
-    
-    <div class="isle" data-aos="fade-in" data-aos-duration="400">
-    
-    <span class="project">
-    <h2 class="wide">岛</h2>
-      <h6>板绘 '17</h6>
-      <p></p></span> 
-    
-    <a href="image/Isle.jpg" data-lightbox="mygallery" data-title="岛" ><img src="image/Isle.jpg" alt="Isle" width="100%" ></a>
-    
-
-     
-    </div>
-    
-     
-    <div class="shj" data-aos="fade-in"> 
-    
-    <span class="project">
-     <h2 class="wide">山海经</h2>
-      <h6>板绘 '16</h6>
-      <p>《山海经》是中国先秦古籍，一本载有怪奇悠谬之说、荟萃珍奇博物、怪物野兽的神话地理志汇编。</p></span>
-    
-    <a href="image/classic-of-mountains-and-seas.jpg" data-lightbox="mygallery" data-title="山海经" ><img src="image/classic-of-mountains-and-seas.jpg" alt="classic-of-mountains-and-seas" width="100%" >
-    <p></p></a>
-    
-    
-     
-    </div>
-    
-    <div class="newyear" data-aos="fade-in" data-aos-duration="400">
-    
-          
-    <span class="project">
-     <h2 class="wide">新年</h2>
-    <h6>板绘 '16</h6>
-        <p></p></span>
-
-    
-    <a href="image/2017_1.jpg" data-lightbox="mygallery" data-title="2017_1" ><img src="image/2017_1.jpg" alt="2017_1" width="100%" >
-    <p>启程</p></a>
-     
-    <a href="image/2017_2.jpg" data-lightbox="mygallery" data-title="2017_2" ><img src="image/2017_2.jpg" alt="2017_2" width="100%" >
-     <p>知足</p></a>
-
-     
-       
-
-    </div>
-   
-   
-    
-    <div class="mooncake" data-aos="fade-in" data-aos-duration="400">
-        
-                 
-    <span class="project">
-     <h2 class="wide">中秋</h2>
-    <h6>水彩 '16</h6>
-    <p>画中的分别为苏式月饼，冰皮月饼，和五仁月饼。</p></span>
          
-         
-    <a href="image/mooncake1.jpg" data-lightbox="mygallery" data-title="月饼1" ><img src="image/mooncake1.jpg" alt="mooncake1" width="100%" ></a>
+     </div>
+     
+     
+     
+     <div class="island">
+          <a href="image/Isle.jpg" data-lightbox="mygallery" data-title="岛" ><img src="image/Isle.jpg" width="100%" >
+          <p>岛</p> </a>
+      </div>
+      
+      <div class="shj">
+           <a href="image/classic-of-mountains-and-seas.jpg" data-lightbox="mygallery" data-title="山海经" ><img src="image/classic-of-mountains-and-seas.jpg" alt="classic-of-mountains-and-seas" width="100%" >
+           <p>山海经</p> </a>
+      </div>
+      
+      <div class="newyear">
+           <a href="image/2017_1.jpg" data-lightbox="mygallery" data-title="启程" ><img src="image/2017_1.jpg" alt="2017_1" width="100%" >
+           <p>启程</p></a>
+     
+           <a href="image/2017_2.jpg" data-lightbox="mygallery" data-title="知足" ><img src="image/2017_2.jpg" alt="2017_2" width="100%" >
+           <p>知足</p></a>
+      </div>
+      
+      <div class="mooncake">
+           <a href="image/mooncake1.jpg" data-lightbox="mygallery" data-title="mooncake1" ><img src="image/mooncake1.jpg" alt="mooncake1" width="100%" >
+           <p>中秋</p></a>
         
-    <a href="image/mooncake2.jpg" data-lightbox="mygallery" data-title="月饼2" ><img src="image/mooncake2.jpg" alt="mooncake2" width="100%" ></a>
+           <a href="image/mooncake2.jpg" data-lightbox="mygallery" data-title="mooncake2" ><img src="image/mooncake2.jpg" alt="mooncake2" width="100%" ></a>
         
-    <a href="image/mooncake3.jpg" data-lightbox="mygallery" data-title="月饼3" ><img src="image/mooncake3.jpg" alt="mooncake3" width="100%" ></a>
-
-    </div>
+           <a href="image/mooncake3.jpg" data-lightbox="mygallery" data-title="mooncake3" ><img src="image/mooncake3.jpg" alt="mooncake3" width="100%" ></a>
+      </div>
 
     
     
@@ -223,12 +192,16 @@
      
 </div>
     
-        
- 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  
+<!-- rellax.js ---->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
+
+<script>
+  let rellax = new Rellax('.rellax');  
+</script>
+
+<!-- rellax.js ---->
   
   
 </body>
