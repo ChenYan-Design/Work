@@ -135,49 +135,41 @@
     
 .logo{
     grid-area:4/1/5/2;
+    grid-template-columns:1fr;
+    grid-gap: 1em;
 }
 
-.graphic{
-    grid-area:5/1/6/2;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:0.5em;
-    padding:0.5%;
+
+.mockup{
+     grid-area:5/1/6/2;
 }
 
-.sketch{
+
+.ins{
     grid-area:6/1/7/2;
 }
 
-.color{
+
+.illustration{
     grid-area:7/1/8/2;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.typeface{
-     grid-area:8/1/9/2;
-
+    grid-template-columns:1fr; 
 }
 
 
-.stationery{
+.side{
+    grid-area:8/1/9/2;
+}
+
+.store{
     grid-area:9/1/10/2;
-    display:grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+    grid-gap: 1em;
 }
 
-
-.employee{
-    grid-area: 10/1/11/2;
-}
-
-.mockup{
-    grid-area:11/1/12/2;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 0.5em;
-}
+    
+    
+    
+    
       
 
 .nextproject{

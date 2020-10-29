@@ -190,19 +190,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  /*--------------footer--------------*/
    
   
@@ -213,6 +200,10 @@
 .top{
     grid-area: 25/5/26/9;
 }
+
+
+
+
 
 
 
@@ -248,7 +239,6 @@
     font-size: 1.2em;
 }
 
-
 .chen a{
     text-decoration:underline;
     font-size: 1em;
@@ -270,138 +260,90 @@
     font-size: 0.9em;
 }
     
-.container img{
-        margin-top: 5%;
-}
     
 .title,.tag{
     font-size: 0.8em;
-    line-height: 1em;
-    display: inline-block;
-    font-family: RF Dewi Expanded;
-    font-weight: 400;
-    transition-duration: 0.3s;
 }
     
-
-.babel{
+    
+ .nightfood{
     grid-area:  7/1/8/2;
 }
 
-.babel a{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+.nightfood a{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     grid-gap: 1em;
-    align-items: flex-end;
 }
 
-.babel a img{
-    grid-column: 1/3;
+.nightfood a img{
+    grid-column: 1/9;
 }
 
-.babel .title{
-    grid-column: 1/2;
+.nightfood .title{
+    grid-column: 1/5;  
 }
-    
-.babel .tag{
-    grid-column: 2/3;
+
+.nightfood .tag{
+    grid-column: 5/9;  
 }
-    
-    
-.netherworld{
+
+
+.bowers{
     grid-area:  8/1/9/2;
 }
 
-.netherworld a{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.netherworld a img{
-    grid-column: 1/3;
-}
-
-.netherworld .title{
-    grid-column: 1/2;
-}
-    
-.netherworld .tag{
-    grid-column: 2/3;
-}
-
-
-.flash{
-    grid-area: 9/1/10/2;
-}
-
-.flash a{
+.bowers a{
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 1em;
 }
 
-.flash a img{
-    grid-column: 1/3;
+.bowers a img{
+    grid-column: 1/7;
 }
 
-.flash .title{
-    grid-column: 1/2;
-}
-    
-.flash .tag{
-    grid-column: 2/3;   
+.bowers .title{
+    grid-column: 1/5;
 }
 
+.bowers .tag{
+    grid-column: 5/7;
+}
 
 
-.alight{
+.bounti{
     grid-area:  10/1/11/2;
 }
 
-.alight a{
+.bounti a{
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 1em;
 }
 
-.alight a img{
+.bounti a img{
+    grid-column: 1/7;
+}
+
+.bounti .title{
     grid-column: 1/3;
 }
 
-.alight .title{
-    grid-column: 1/2;
+.bounti .tag{
+    grid-column: 3/7;
 }
 
-.alight .tag{
-    grid-column: 2/3;   
-}
 
-    
-.iteration{
+.history{
     grid-area:  11/1/12/2;
-}
-
-.iteration a{
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.iteration a img{
-    grid-column: 1/3;
-}
-
-.iteration .title{
-    grid-column: 1/2;
-}
-
-.iteration .tag{
-    grid-column: 2/3;   
-}
-
+    position: relative;
+    bottom: 0%;
+}   
     
     
-.collage{
-    display: none;
-}
-
+    
+    
     
 
 
