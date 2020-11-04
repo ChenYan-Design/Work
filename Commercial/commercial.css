@@ -95,7 +95,7 @@
 
 
 .nightfood{
-    grid-area:  7/3/8/9;
+    grid-area:  7/3/8/7;
 }
 
 .nightfood a{
@@ -140,8 +140,28 @@
 }
 
 
-.bounti{
+.maplehill{
     grid-area:  10/3/11/9;
+}
+.maplehill a{
+    display: inline-grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 1em;
+}
+.maplehill a img{
+    grid-column: 1/9;
+}
+.maplehill .title{
+    grid-column: 1/5;
+}
+.maplehill .tag{
+    grid-column: 5/9;
+}
+
+
+
+.bounti{
+    grid-area:  11/3/12/9;
 }
 
 .bounti a{
@@ -164,7 +184,7 @@
 
 
 .history{
-    grid-area:  11/7/12/9;
+    grid-area:  12/7/13/9;
     position: relative;
     bottom: 50%;
 }
@@ -311,9 +331,12 @@
     grid-column: 5/7;
 }
 
+.maplehill{
+    grid-area:  10/1/11/2;
+}
 
 .bounti{
-    grid-area:  10/1/11/2;
+    grid-area:  11/1/12/2;
 }
 
 .bounti a{
@@ -336,7 +359,8 @@
 
 
 .history{
-    grid-area:  11/1/12/2;
+    grid-area:  12/1/13/2;
+    width: 70%;
     position: relative;
     bottom: 0%;
 }   
