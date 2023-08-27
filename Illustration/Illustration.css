@@ -100,6 +100,12 @@ div a p{
     transition-duration: 0.3s;
 }
 
+.roadtrip{
+    grid-area:  7/3/8/5;
+}
+.timedealer{
+    grid-area:  7/5/8/7;
+}
 .halloween{
     grid-area:  8/3/9/7;
 }
@@ -217,47 +223,55 @@ div a p{
     font-size: 12px;
 }
     
-.halloween{
-    grid-area:  7/1/8/2;
-}
-
-.vintage{
+    
+.roadtrip{
     grid-area:  8/1/9/2;
 }
-    
-.amelie{
+.timedealer{
     grid-area:  9/1/10/2;
 }
-
-.llama{
+    
+.halloween{
     grid-area:  10/1/11/2;
 }
 
-.sea{
+.vintage{
     grid-area:  11/1/12/2;
+}
+    
+.amelie{
+    grid-area:  12/1/13/2;
+}
+
+.llama{
+    grid-area:  13/1/14/2;
+}
+
+.sea{
+    grid-area:  14/1/15/2;
 }
 
 
 
 .weekly{
-    grid-area:  12/1/13/2;
+    grid-area:  15/1/16/2;
     grid-template-columns: 1fr 1fr;
 }
 
 .island{
-    grid-area:  13/1/14/2;
+    grid-area:  16/1/17/2;
 }
 
 .shj{
-    grid-area:  14/1/15/2;
+    grid-area:  17/1/18/2;
 }
 
 .newyear{
-    grid-area:  15/1/16/2;
+    grid-area:  18/1/19/2;
 }
 
 .mooncake{
-    grid-area:  16/1/17/2;
+    grid-area:  19/1/20/2;
     grid-template-columns: 1fr;
 }
     
