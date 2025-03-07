@@ -100,15 +100,21 @@ div a p{
     transition-duration: 0.3s;
 }
 
+.Canang-Sari{
+    grid-area:  7/3/8/6;
+}
+
+.halloween{
+    grid-area:  7/6/8/9;
+}
+
 .roadtrip{
-    grid-area:  7/3/8/5;
+    grid-area:  8/3/9/5;
 }
 .timedealer{
-    grid-area:  7/5/8/7;
+    grid-area:  8/5/9/7;
 }
-.halloween{
-    grid-area:  8/3/9/7;
-}
+
 .vintage{
     grid-area:  8/7/9/9;
 }
@@ -222,7 +228,10 @@ div a p{
 div a p{
     font-size: 12px;
 }
-    
+   
+.Canang-Sari{
+    grid-area:  7/1/8/2;
+}
     
 .roadtrip{
     grid-area:  8/1/9/2;

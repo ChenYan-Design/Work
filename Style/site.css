@@ -179,32 +179,7 @@ header .logo{
     text-decoration: ;
 }
 
-.customize{
-    width:25%;
-    height: 10%;
-    position:fixed;
-    right:3%;
-    bottom:3%;
-    
-}
 
-.customize ul{
-    position: absolute;
-    bottom:0;
-    right:0;  
-    list-style: none;
-}
-
-
-.customize ul li{
-    margin-left:20px;
-    display:inline-block;
-}
-
-.customize ul li a{
-    font-size:18px;
-    text-decoration: none;
-}
 
 .top a{
     text-decoration: underline;
@@ -291,23 +266,6 @@ header .logo{
    
  
     
-.customize{
-    width:40%;
-    height: 10%;
-    position:fixed;
-    right:3%;
-    bottom:0;   
-}
-    
-.customize ul li{
-    margin-left:1.2em;
-}
-    
-.customize ul li a{
-    font-size:1.2em;
-    text-decoration: none;
-}
-
 
 }
 
