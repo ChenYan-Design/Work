@@ -25,19 +25,16 @@
 }
 
 .chen p{
-    font-size:24px;
+    font-size:36px;
 }
 
 
 .chen a{
     text-decoration:underline; 
-    font-size:24px;
+    font-size:36px;
 
 }
 
-.chen a>img { 
-    display: none; 
-}
 
 .chen a:hover>img { display: block; }
 
@@ -264,9 +261,6 @@
     font-size: 1em;
 
 }
-
-.chen a:hover>img { display: none; }
-
 
 .projects{
     grid-area:  5/1/6/2;
